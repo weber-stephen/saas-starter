@@ -22,7 +22,7 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 ## Technologies
 
-### Next.js
+### Frontend and API Framework - Next.js
 
 To learn more about Next.js, take a look at the following resources:
 
@@ -31,8 +31,13 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-### Tailwind
+### CSS Framework - Tailwind
 https://tailwindcss.com/
 
-## Figma
-[https://www.figma.com/community/file/1203061493325953101](Shadcn Figma)
+### Component Framework - shadcn/ui
+[https://ui.shadcn.com/](shadcn/ui)
+
+[https://www.figma.com/community/file/1203061493325953101](Components Figma)
+
+### Icons & Icons Figma
+https://www.radix-ui.com/icons
