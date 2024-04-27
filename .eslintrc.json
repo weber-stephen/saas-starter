@@ -3,6 +3,15 @@
     "next/core-web-vitals",
     "plugin:storybook/recommended",
     "plugin:storybook/recommended",
-    "plugin:storybook/recommended"
-  ]
+    "plugin:storybook/recommended",
+    "next",
+    "prettier"
+  ],
+  "plugins": ["@typescript-eslint"],
+  "rules": {
+    "@typescript-eslint/no-unused-vars": ["warn", { "args": "none" }],
+    "import/no-unresolved": "error",
+    "import/named": "off",
+    "no-console": "warn"
+  }
 }
