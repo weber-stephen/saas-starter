@@ -4,6 +4,9 @@ on:
     branches: [ main, master ]
   pull_request:
     branches: [ main, master ]
+env:
+  NEXTAUTH_SECRET="thisisafakesecret"
+  NEXTAUTH_URL="http://localhost:3000"
 jobs:
   test:
     timeout-minutes: 60
