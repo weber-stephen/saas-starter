@@ -1,13 +1,8 @@
 import { NextAuthOptions } from "next-auth";
-import GithubProvider from "next-auth/providers/github";
 import CredentialProvider from "next-auth/providers/credentials";
 
 export const authOptions: NextAuthOptions = {
   providers: [
-    GithubProvider({
-      clientId: process.env.GITHUB_ID ?? "",
-      clientSecret: process.env.GITHUB_SECRET ?? "",
-    }),
     CredentialProvider({
       credentials: {
         email: {
@@ -32,5 +27,9 @@ export const authOptions: NextAuthOptions = {
   ],
   pages: {
     signIn: "/", //sigin page
+    // signOut: '/auth/signout',
+    // error: '/auth/error', // Error code passed in query string as ?error=
+    // verifyRequest: '/auth/verify-request', // (used for check email message)
+    newUser: '/signup' // New users will be directed here on first sign in (leave the property out if not of interest)
   },
 };

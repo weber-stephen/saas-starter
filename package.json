@@ -13,7 +13,10 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "format": "prettier --check --ignore-path .gitignore .",
-    "format:fix": "prettier --write --ignore-path .gitignore ."
+    "format:fix": "prettier --write --ignore-path .gitignore .",
+    "test:e2e": "yarn playwright test",
+    "test:e2e:ui": " yarn playwright test --ui",
+    "test:e2e:report": "yarn playwright show-report"
   },
   "dependencies": {
     "@apollo/server": "^4.10.1",
@@ -68,6 +71,7 @@
     "zod": "^3.22.4"
   },
   "devDependencies": {
+    "@playwright/test": "^1.43.1",
     "@storybook/addon-essentials": "^8.0.8",
     "@storybook/addon-interactions": "^8.0.8",
     "@storybook/addon-links": "^8.0.8",
