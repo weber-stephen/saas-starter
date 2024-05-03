@@ -15,7 +15,7 @@ This is a starter template using the following stack:
 - Components - [Shadcn-ui](https://ui.shadcn.com)
 - Schema Validations - [Zod](https://zod.dev)
 - Auth - [Nextauth](https://next-auth.js.org)
-- Tables - [Tanstack Tables](https://ui.shadcn.com/docs/components/data-table)
+- Tables - [Tanstack Tables](https://tanstack.com/table/)
 - Linting - [ESLint](https://eslint.org)
 - Formatting - [Prettier](https://prettier.io)
 - Jest - [Jest](https://jestjs.io/)
@@ -34,18 +34,18 @@ Stories from [https://github.com/JheanAntunes/storybook-shadcn](https://github.c
 | Users          | Tanstack tables with user details client side searching, pagination etc                               |
 | Profile     | Mutistep dynamic forms using react-hook-form and zod for form validation.                             |
 | 404 Page  | Not Found Page Added in the root level                                                                |
-|                            
+                         
 
 ## Getting Started
 
 Follow these steps to clone the repository and start the development server:
 
 - `git clone https://github.com/weber-stephen/saas-starter.git`
-- `npm install`
+- `yarn install`
 - Create a `.env.local` file by copying the example environment file:
   `cp env.example.txt .env.local`
 - Add the required environment variables to the `.env.local` file.
-- `npm run dev`
+- `yarn dev`
 
 You should now be able to access the application at http://localhost:3000.
 
