@@ -3,6 +3,7 @@ import { gql } from 'graphql-tag'
 const typeDefs = gql`
   type Query {
     users: [User]
+    getUserById(id: Int!): User!
   }
 
   type User {

@@ -1,10 +1,11 @@
 "use client";
 
-import BreadCrumb from "@/components/breadcrumb";
-import { UserClient } from "@/components/tables/user-tables/client";
 import { useQuery } from '@tanstack/react-query';
 import request from 'graphql-request'
 import gql from "graphql-tag";
+
+import BreadCrumb from "@/components/breadcrumb";
+import { UserClient } from "@/components/tables/user-tables/client";
 
 const breadcrumbItems = [{ title: "User", link: "/users" }];
 
