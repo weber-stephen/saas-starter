@@ -9,8 +9,6 @@ env:
   NEXTAUTH_URL: "http://localhost:3000"
 jobs:
   test:
-    permissions:
-      pull-requests: write
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
@@ -24,10 +22,6 @@ jobs:
       run: yarn playwright install --with-deps
     - name: Run Playwright tests
       run: yarn playwright test
-      # Report on playwright tests in PR comment
-    - uses: sidharthv96/playwright-report-action
-      with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
     - uses: actions/upload-artifact@v4
       if: always()
       with:

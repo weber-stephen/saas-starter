@@ -1,0 +1,15 @@
+name: Playwright Test Coverage
+on:
+    pull_request:
+        branches:
+            - master
+            - main
+jobs:
+    playwright:
+        runs-on: ubuntu-latest
+        if: "!contains(github.event.head_commit.message, '[skip ci]')"
+        steps:
+            - uses: actions/checkout@v1
+            - uses: sidharthv96/playwright-report-action
+              with:
+                  github-token: ${{ secrets.GITHUB_TOKEN }}
