@@ -21,7 +21,10 @@ jobs:
     - name: Install Playwright Browsers
       run: yarn playwright install --with-deps
     - name: Run Playwright tests
-      run: yarn playwright test
+      run: PLAYWRIGHT_JSON_OUTPUT_NAME=results.json yarn playwright test --reporter json
+    - uses: daun/playwright-report-summary@v3
+      with:
+        report-file: results.json
     - uses: actions/upload-artifact@v4
       if: always()
       with:
