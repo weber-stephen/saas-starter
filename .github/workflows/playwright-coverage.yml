@@ -13,3 +13,5 @@ jobs:
             - uses: sidharthv96/playwright-report-action
               with:
                   github-token: ${{ secrets.GITHUB_TOKEN }}
+                  package-manager: yarn
+                  test-script: yarn run test:e2e
