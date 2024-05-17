@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="7" failures="0" errors="0" time="1.713">
+  <testsuite name="src/app/(dashboard)/dashboard/dashboard.spec.tsx" errors="0" failures="0" skipped="0" timestamp="2024-05-17T03:35:43" time="0.647" tests="1">
+    <testcase classname="Dashboard" name="renders a heading" time="0.059">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/app/api/tests/users.test.ts" errors="0" failures="0" skipped="0" timestamp="2024-05-17T03:35:44" time="0.39" tests="1">
+    <testcase classname="GraphQL Query getUserById" name="gets a user" time="0.054">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/app/(auth)/(signin)/login.spec.tsx" errors="0" failures="0" skipped="0" timestamp="2024-05-17T03:35:44" time="0.228" tests="2">
+    <testcase classname="Authentication Page" name="has title" time="0.013">
+    </testcase>
+    <testcase classname="Authentication Page" name="has authentication form" time="0.004">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/components/user-auth-form/user-auth-form.test.tsx" errors="0" failures="0" skipped="0" timestamp="2024-05-17T03:35:44" time="0.215" tests="3">
+    <testcase classname="AuthForm" name="Has email input field" time="0.01">
+    </testcase>
+    <testcase classname="AuthForm" name="Has password input field" time="0.003">
+    </testcase>
+    <testcase classname="AuthForm" name="Has login button" time="0.002">
+    </testcase>
+  </testsuite>
+</testsuites>

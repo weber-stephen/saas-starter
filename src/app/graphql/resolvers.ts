@@ -26,7 +26,6 @@ const resolvers = {
           if(validateFormData(args)) {
             const { id } = args;
             const result = find(users, { id });
-            console.log(result);
             return result;
           }
         } catch (err) {

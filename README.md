@@ -58,8 +58,10 @@ Commands availabile in the package.json file
 | `yarn build`           | Build the application                   |
 | `yarn start`           | Run the application                     |
 | `yarn lint`            | Lint the application                    |
-| `yarn test`            | Run Jest tests                          |
-| `yarn test:watch`      | Run Jest tests in watch mode            |
+| `yarn test:ui`         | Run UI Jest tests                       |
+| `yarn test:ui:watch`   | Run UI Jest tests in watch mode         |
+| `yarn test:api`        | Run API Jest tests                      |
+| `yarn test:api:watch`  | Run API Jest tests in watch mode        |
 | `yarn test:ci`         | Run tests setup for CI                  |
 | `yarn storybook`       | Run storybook                           |
 | `yarn build-storybook` | Run storybook build                     |
