@@ -26,6 +26,8 @@ jobs:
       run: yarn playwright test
       # Report on playwright tests in PR comment
     - uses: sidharthv96/playwright-report-action
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
     - uses: actions/upload-artifact@v4
       if: always()
       with:
