@@ -9,6 +9,8 @@ env:
   NEXTAUTH_URL: "http://localhost:3000"
 jobs:
   test:
+    permissions:
+      pull-requests: write
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
