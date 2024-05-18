@@ -19,6 +19,8 @@ jobs:
         #Comments the JEST tests in the PR
       - name: Jest Coverage Comment
         uses: MishaKav/jest-coverage-comment@main
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
       
         #Comments the JEST tests diff in the PR
       - name: Jest Coverage Comment Diff
