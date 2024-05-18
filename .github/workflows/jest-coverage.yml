@@ -15,14 +15,21 @@ jobs:
       - name: Run tests
         run: |
           yarn run test:ui:coverage
-
+    
+        #Comments the JEST tests in the PR
       - name: Jest Coverage Comment
         uses: MishaKav/jest-coverage-comment@main
       
+        #Comments the JEST tests diff in the PR
       - name: TestCoverage
         id: testCoverage
         uses: anuraag016/Jest-Coverage-Diff@master
         with:
-            fullCoverageDiff: true
+            fullCoverageDiff: false
             runCommand: "yarn jest --collectCoverageFrom='[\"src/**/*.{js,jsx,ts,tsx}\"]' --coverage --collectCoverage=true --coverageDirectory='./' --coverageReporters='json-summary' --forceExit --detectOpenHandles"
             delta: 0.5
+        # Jest Test Coverage report
+      - uses: artiomtr/jest-coverage-report-action@v1.3
+        with:
+            github-token: ${{ secrets.GITHUB_TOKEN }}
+            threshold: 80
