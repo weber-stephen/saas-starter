@@ -35,5 +35,6 @@ jobs:
       - name: Jest Coverage Comment
         uses: artiomtr/jest-coverage-report-action@v1.3
         with:
+          test_script: yarn run test:ui:coverage
           github_token: ${{ secrets.GITHUB_TOKEN }}
           threshold: 80
