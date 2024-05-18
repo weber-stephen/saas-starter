@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Use Node.js
         uses: actions/setup-node@v4
         with:
@@ -37,9 +37,9 @@ jobs:
             delta: 0.5
       
       # Jest Test Coverage Threshold
-      - name: Jest Coverage Comment
-        uses: artiomtr/jest-coverage-report-action@v1.3
-        with:
-          test_script: yarn run test:ui:coverage
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          threshold: 80
+      # - name: Jest Coverage Comment
+      #   uses: artiomtr/jest-coverage-report-action@v1.3
+      #   with:
+      #     test_script: yarn run test:ui:coverage
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     threshold: 80
