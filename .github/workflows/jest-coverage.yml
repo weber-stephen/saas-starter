@@ -31,5 +31,5 @@ jobs:
         # Jest Test Coverage
       - uses: artiomtr/jest-coverage-report-action@v1.3
         with:
-            github-token: ${{ secrets.GITHUB_TOKEN }}
+            github_token: ${{ secrets.GITHUB_TOKEN }}
             threshold: 95
