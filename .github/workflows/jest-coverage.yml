@@ -35,11 +35,3 @@ jobs:
             fullCoverageDiff: false
             runCommand: "yarn jest --collectCoverageFrom='[\"src/**/*.{js,jsx,ts,tsx}\"]' --coverage --collectCoverage=true --coverageDirectory='./' --coverageReporters='json-summary' --forceExit --detectOpenHandles"
             delta: 0.5
-      
-      # Jest Test Coverage Threshold
-      # - name: Jest Coverage Comment
-      #   uses: artiomtr/jest-coverage-report-action@v1.3
-      #   with:
-      #     test_script: yarn run test:ui:coverage
-      #     github_token: ${{ secrets.GITHUB_TOKEN }}
-      #     threshold: 80
